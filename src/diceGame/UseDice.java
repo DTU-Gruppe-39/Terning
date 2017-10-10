@@ -26,7 +26,9 @@ public class UseDice {
 		Scanner keyboard=new Scanner(System.in);   // Make an instance of keyboard Scanner
 		System.out.println("Welcome to the diceroll program");
 		//		for(int tries=3; tries>0; tries--) {
-		while (true) {	
+		
+		//Bruges til test
+		//while (true) {	
 			System.out.println("How many times do you want to roll the dice?");
 			String n = keyboard.nextLine();  // Read integer
 			if(n.matches("^\\d+$"))// 
@@ -44,8 +46,8 @@ public class UseDice {
 			}
 
 			//}
-			//		keyboard.close();  
 			//		System.out.println("Out of tries. Reboot program for more tries");
-		}
+		//}
+		keyboard.close();  
 	}
 }
