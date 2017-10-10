@@ -25,25 +25,27 @@ public class UseDice {
 		Dice cup = new Dice();   // Make an instance of Dice
 		Scanner keyboard=new Scanner(System.in);   // Make an instance of keyboard Scanner
 		System.out.println("Welcome to the diceroll program");
-		for(int tries=3; tries>0; tries--) {
+		//		for(int tries=3; tries>0; tries--) {
+		while (true) {	
 			System.out.println("How many times do you want to roll the dice?");
 			String n = keyboard.nextLine();  // Read integer
 			if(n.matches("^\\d+$"))// 
 			{
 				cup.rollMultiple(Integer.parseInt(n));         // Roll the dice n times	
 			}else {
-			 
+
 				System.out.println("Not compatible input, try again");
-				if(tries==2) {
-					System.out.println("You have "+(tries-1)+" try left");
-				}else {
-					System.out.println("You have "+(tries-1)+" tries left");
-				}
-						
+				//				if(tries==2) {
+				//					System.out.println("You have "+(tries-1)+" try left");
+				//				}else {
+				//					System.out.println("You have "+(tries-1)+" tries left");
+				//				}
+
 			}
-		
+
+			//}
+			//		keyboard.close();  
+			//		System.out.println("Out of tries. Reboot program for more tries");
 		}
-		keyboard.close();  
-		System.out.println("Out of tries. Reboot program for more tries");
 	}
 }
