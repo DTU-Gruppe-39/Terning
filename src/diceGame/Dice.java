@@ -8,7 +8,7 @@ public class Dice {
 		int d3=Math.round(d2);             // 0-5 integer
 		return d3 + 1;                     // 1-6		
 	}
-	
+	//HEJ
 	// roll the die n times and print the values
 	public void rollMultiple(int n) {
 		for (int i=0; i<n; i++) {
